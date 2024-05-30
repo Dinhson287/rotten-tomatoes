@@ -1,0 +1,40 @@
+
+    <div class="login-container">
+      <img class="decoration-photo" src="" alt="" />
+      <div class="logo">Rotten Tomatoes</div>
+      <div class="description">
+        Rotten Tomatoes is an American review-aggregation website for film and
+        television. The company was launched in August 1998 by three
+        undergraduate students at the University of California, Berkeley: Senh
+        Duong, Patrick Y. Lee, and Stephen Wang. Although the name
+        "Rotten Tomatoes" connects to the practice of audiences throwing rotten
+        tomatoes in disapproval of a poor stage performance, the direct
+        inspiration for the name from Duong, Lee, and Wang came from an
+        equivalent scene in the 1992 Canadian film Léolo.
+      </div>
+      <div class="login-form">
+        <div class="form-group">
+          <label for="username">User Name: </label>
+          <input
+            type="text"
+            name="username"
+            class="form-control"
+            [(ngModel)]="username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            [(ngModel)]="password"
+          />
+        </div>
+        <div class="btn-container">
+          <div class="error-msg">{{ errorMsg }}</div>
+          <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+      </div>
+    </div>
+
